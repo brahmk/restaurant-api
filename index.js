@@ -15,7 +15,7 @@ app.use(express.json())
 app.get('/restaurants', getAllRestaurants);
 app.get('/restaurants/:restaurantId', getRestaurantById)
 app.patch('/restaurants/:restaurantId', updateRestaurant)
-app.post('/restaurants/:restaurantId', addRestaurant)
+app.post('/restaurants', addRestaurant)
 app.delete('/restaurants/:restaurantId', deleteRestaurant)
 
 app.listen(3030, () => {
